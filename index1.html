@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="port-br">
+    <meta charset="utf-8"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&family=Texturina:opsz@12..72&display=swap" rel="stylesheet">
+    <head>  
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            header{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 28px;
+            }
+            body{
+                background-image: url(img/fundo.png);
+                background-repeat: no-repeat;
+                background-size: auto;
+            }
+            fieldset{
+                background-color: cornflowerblue;
+                top: 250px;
+                color: white;
+            }
+            h1{
+                color: white;
+                font-family: 'Texturina', serif;
+                font-size: 50px;
+            }
+            a{
+                font-size: 20px;
+                font-family: 'Roboto Slab', serif;
+            }
+            a:link{ 
+                color: white;
+                text-decoration: none;
+            } 
+            a:visited{
+                color:aquamarine;
+                text-decoration: none;
+            } 
+            a:hover{
+                color: mediumpurple;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1> Formulário de inscrição </h1>
+        </header>
+        <form action="" method="get"></form>
+            <fieldset>
+                <legend> Dados Pessoais: </legend>
+
+                <label for="Nome"> Nome: </label>
+                <input type="text" id="nome" size="30" maxlength="100" required/> </br>
+
+                <label for="CPF"> CPF: </label>
+                <input type="number" id="cpf" size="30" maxlength="100" required/> </br>
+
+                <label for="telefone"> Numero de telefone para contato: </label>
+                <input type="tel" id="telefone" size="30" maxlength="100"/> </br>
+            </fieldset>
+            
+            <fieldset>
+                <legend> Dados Escolares: </legend>
+
+                <label for="Matricula"> Matricula: </label>
+                <input type="number" id="Matricula" required size="30" maxlength="100"/> </br>
+
+                <label for="Campus"> Campus: </label>
+                <select name="campus">
+                    <option value=""> Apodi </option>
+                    <option value=""> Caicó </option>
+                    <option value=""> Canguaretama </option>
+                    <option value=""> Ceará-Mirim </option>
+                    <option value=""> Currais novos </option>
+                    <option value=""> Ipaguançu </option>
+                    <option value=""> João Câmara </option>
+                    <option value=""> Jucurutu </option>
+                    <option value=""> Lajes </option>
+                    <option value=""> Macau </option>
+                    <option value=""> Mossoró </option>
+                    <option value=""> Natal-Central </option>
+                    <option value=""> Natal-Cidade Alta </option>
+                    <option value=""> Natal-Zona Leste </option>
+                    <option value=""> Natal-Zona Norte </option>
+                    <option value=""> Nova Cruz </option>
+                    <option value=""> Parelhas </option>
+                    <option value=""> Parnamirim </option>
+                    <option value=""> Pau dos Ferros </option>
+                    <option value=""> Santa Cruz </option>
+                    <option value=""> São Gonçalo do Amarante </option>
+                    <option value=""> São Paulo do Potengi </option>
+                    <option value=""> Reitoria </option>
+                </select> <br/>
+
+                <label for="Ocupacao"> O que você é: </label> 
+                <input type="radio" id="x" name="Ocupacao" value="Est"/>
+                <label for="Ocupacao1"> Estudante </label>
+                <input type="radio" id="x1" name="Ocupacao" value="Prof"/>
+                <label for="Ocupacao2"> Professor </label>
+                <input type="radio" id="x2" name="Ocupacao" value="Palest"/>
+                <label for="Ocupacao3"> Palestrante </label>
+                <br/>
+                <input type="submit" value="enviar"/>
+            </fieldset>
+        </form>
+
+        <a href="index.html"> Voltar para o início </a>
+
+    </body>
+</html>
